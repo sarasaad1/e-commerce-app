@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import mobile from '../responsive'
 
 const Container = styled.div`
     background-color: darkred;
@@ -12,6 +13,7 @@ const Container = styled.div`
     font-weight:500;
     margin-bottom: -15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    ${mobile({ fontSize: "10px", fontWeight:"200" })}
 `
 
 

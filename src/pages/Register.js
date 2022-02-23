@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import mobile from '../responsive';
 
 const Container = styled.div`
     width: 100vw;
@@ -13,8 +14,9 @@ const Container = styled.div`
 `
 const Wrapper = styled.div`
   width: 40%;
-  padding: 20px;
+  padding: 30px;
   background-color: white;
+  ${mobile({ width: "75%"})}
 `
 
 const Title = styled.h1`
@@ -37,7 +39,7 @@ const Input = styled.input`
 const Agreement = styled.span`
   font-size: 12px;
   margin: 20px 0px;
-`;
+`
 
 const Button = styled.button`
   width: 40%;
@@ -46,7 +48,7 @@ const Button = styled.button`
   background-color: black;
   color: white;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 600;  
 
   &:hover{
     background-color: #D0D0D0;
